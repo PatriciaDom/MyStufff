@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"> 
+		<title>Tripping</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="C:\Users\padomingos\Desktop\TryingStuff\transferir.png" type="image/x-icon">
+		
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<link rel="stylesheet" href="css/bootstrap.css">
+  		<script type="text/javascript" src='http://maps.google.com/maps/api/js?sensor=false&libraries=places'></script>
+    	<script src="js/locationpicker.jquery.js"></script>
+  		
+		<!-- my paths -->
+		<script type="text/javascript" src="js/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- my paths -->
+	
+
+
+	</head>
+	
+	<header>
+	<nav class="navbar-inverse" role="navigation">
+		<div class="container">
+			<div class="navbar-header">		
+				<a class="navbar-brand" href="index.html#">
+				<img src="img/transferir.png" style="display:inline-block">
+				<span style="padding-left:30px;">Tripping</span>
+				</a>
+			</div>
+			
+			<div class="create-what" style="display: inline;">
+				<ul class="nav navbar-nav" >
+					<li class="what-left">
+                        <a class="page-scroll" href="what.html#">What</a>
+                    </li>
+					<li class="create-left">
+							<a class="page-scroll" href="#">New Adventureer</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+
+
+<body id="page-top" onload="loginForm.reset()">
+	<div class="form-login">
+			<h2><b>Adventures await you...</b></h2>
+			<br>
+		<form name="loginForm" action="redirect.html" >
+		<div class ="format-pass" >
+			<i class="glyphicon glyphicon-user"></i>
+		   	<label for="user" > Email: </label>
+			<input class="input-format" type="email" id="user" name="username" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="CookieKiller@gmail.com" required><br>
+		</div>
+		<div class ="format-pass">
+		 	<i class="glyphicon glyphicon-lock"></i>
+			<label for="pass">Password:</label> <br>
+			<input class="input-format" maxlength=10 type="password" id="pass" name = "password" pattern="([A-zÀ-ž\s]){1,}" placeholder="Your secret password...." required><br>
+		</div>
+		<div class="format-box">	
+			<input class="input-checkbox" type="checkbox" name="remember" value="remember" checked >
+			<label>Remember Me</label>
+		</div>	
+		<br>	
+			<input  class="login-button" type="submit" value="Enter World">
+		</form>
+	</div>	
+</body>
+</html>
